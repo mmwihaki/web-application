@@ -32,7 +32,7 @@
       <div class="row" style="margin: 20px;">
          <div class="column">
            <p>
-             <form class="" action="index.html" method="post">
+             <form>
                <label for="dob">Year of Birth</label>
                <input type="date" name="YOB" value="">
              </form>
@@ -42,7 +42,14 @@
 
       <div class="row" style="margin: 20px;">
         <div class="column">
-          <p>lorem</p>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Gender</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Male</a>
+              <a href="#">Female</a>
+              <a href="#">Prefer Not To Say</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -57,10 +64,25 @@
       </div>
 
     <script type="text/javascript">
-      if(name==null || name==''''){
-        alert("Name can't be blank");
-        return false;
+      /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
+    }
+  }
+}
     </script>
   </body>
 </html>
