@@ -1,4 +1,24 @@
 function getName() {
   let yearOfBirth = document.getElementByID(yearOfBirth).value);
-  let monthOfBirth = Number(document.get)
+
+  let genders = documents.getElementsByName("gender");
+
+  function getGender () {
+    for (let gender of genders){
+      if (gender.checked){
+        return gender.value;
+      }
+    }
+  }
+
+  let myGenderValue = getGender ();
+
+  console.log(myGenderValue);
+
+  function Validator(){
+    if () {
+
+    }
+  }
+
 }

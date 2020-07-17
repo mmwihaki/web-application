@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <title>Web App</title>
   </head>
   <body style="background-color: maroon; font-family: sans-serif;">
@@ -21,25 +20,31 @@
       <div class="row" style="margin: 20px;">
         <div class="column">
           <p>
+            <p>When were you born?</p>
+            <br>
             <form class="form" action="index.html" method="submit" onsubmit="return yourAkanName()">
-              <label for="name">Full Name</label>
-              <input type="text" name="fullname" value="" required>
+              <label for="dob">Year</label>
+              <input id="year-input" type="number" name="year-of-birth" value="" placeholder="YYYY" required>
               <br>
               <br>
+              <label id="month-input" for="dob">Month</label>
+              <input type="number" name="month-of-birth" value=""placeholder="MM" required>
               <br>
-              <label for="dob">Year of Birth</label>
-              <input type="date" name="YOB" value="" required>
+              <br>
+              <label id="day-input" for="dob">Day</label>
+              <input type="number" name="day-of-birth" value="" placeholder="DD" required>
+              <br>
               <br>
               <label for="gender">
                 <p>Select Your Gender:</p>
                 Male
                 <input id="male-input" type="radio" name="gender" value="male" required>
                 Female
-                <input id="female-input" type="radio" name="female" value="" required>
+                <input id="female-input" type="radio" name="gender" value="female" required>
               </label>
             </form>
             <form onsubmit="return clearInput()">
-              <input type="submit" class="clear" value="Clear input">
+              <input type="submit" class="clear" value="Submit">
             </form>
           </p>
         </div>
