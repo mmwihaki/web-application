@@ -1,0 +1,35 @@
+.container{
+  padding: 6px;
+  margin: 100px 400px;
+  background-color: black;
+  color: white;
+  width: 40%;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+.salut{
+
+}
+
+.introduction{
+
+
+}
+
+.column1{
+  width: 20%;
+
+}
+
+.container2{
+  padding: 6px;
+  margin: 10px 500px;
+  background-color: white;
+  color: black;
+  width: 30%;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+}
