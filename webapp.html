@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <title>Web App</title>
   </head>
   <body style="background-color: maroon;">
@@ -16,17 +17,50 @@
         <p>Akan names are derived form Ghanian Culture. Frequntly in Ghana, children are given their first name as a "day name" which corresponds to the day in the week you were born.</p>
         <p>So, lets find out!</p>
       </div>
-    </div>
 
-    <div class="container2">
-        <div class="row">
-          <h1>What is your Akan name?</h1>
+      <div class="row" style="margin: 20px;">
+        <div class="column">
+          <p>
+            <form class="" action="index.html" method="post">
+              <label for="name">Full Name</label>
+              <input type="text" name="fullname" value="">
+            </form>
+          </p>
         </div>
+      </div>
 
-        <form class="" action="index.html" method="post">
-          <p>When were you born?</p>
-        </form>
-   </div>
+      <div class="row" style="margin: 20px;">
+         <div class="column">
+           <p>
+             <form class="" action="index.html" method="post">
+               <label for="dob">Year of Birth</label>
+               <input type="date" name="YOB" value="">
+             </form>
+           </p>
+         </div>
+      </div>
 
+      <div class="row" style="margin: 20px;">
+        <div class="column">
+          <p>lorem</p>
+        </div>
+      </div>
+
+      <div class="solution">
+        <p>Your Akan Name is...</p>
+      </div>
+
+      <div class="row">
+        <div class="column2">
+          <p>Lorem</p>
+        </div>
+      </div>
+
+    <script type="text/javascript">
+      if(name==null || name==''''){
+        alert("Name can't be blank");
+        return false;
+      }
+    </script>
   </body>
 </html>
