@@ -17,7 +17,7 @@
         <p>So, lets find out!</p>
       </div>
 
-      <div class="row" style="margin: 20px;">
+      <div class="row" style="margin: 20px; text-align: center;">
         <div class="column">
           <p>
             <p>When were you born?</p>
@@ -42,6 +42,9 @@
                 Female
                 <input id="female-input" type="radio" name="gender" value="female" required>
               </label>
+              <br><br>
+              <input id="get-name" type="submit" name="" value="Generate name">
+              <br><br>
             </form>
             <form onsubmit="return clearInput()">
               <input type="submit" class="clear" value="Submit">
@@ -56,13 +59,12 @@
 
       <div class="row">
         <div class="column2">
-          <p>
-            document.write()
+          <p id="result">
           </p>
         </div>
       </div>
 
-    <script type="text/javascript">
+    <script type="text/javascript"src="js/script.js" >
 
     </script>
   </body>
