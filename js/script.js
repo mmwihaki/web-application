@@ -1,6 +1,10 @@
+
+function yourAkanName() {
+
+}
 var yearOfBirth = 1996;
-var monthOfBirth = 12;
-var dayOfBirth = 14;
+var monthOfBirth = 2;
+var dayOfBirth = 6;
 
 
 //vaidating dateOfBirth
@@ -18,7 +22,7 @@ if (monthOfBirth >= 1 && monthOfBirth <= 12){
 }
 
 //century from yearOfBirth
-var century = yearOfBirth % 100 === 0 ? year/100 : Math.floor(yearOfBirth/100) + 1;
+var century = yearOfBirth % 100 === 0 ? yearOfBirth/100 : Math.floor(yearOfBirth/100) + 1;
 console.log(century);
 
 //dayOfTheWeek
