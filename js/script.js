@@ -6,8 +6,7 @@ var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 function yourAkanName() {
   event.preventDefault();
   var yearOfBirth = document.getElementById("yearOfBirth").value;
-  console.log(yearOfBirth);
-  console.log(typeof(yearOfBirth));
+
 
   var gender = document.getElementById("userGender").value;
   if (yearOfBirth === "") {
